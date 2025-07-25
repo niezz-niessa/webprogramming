@@ -1,0 +1,8 @@
+body {
+  background-color: lightblue; /* Mengatur latar belakang halaman */
+}
+   
+h1 {
+  color: navy; /* Mengatur warna teks judul */
+  margin-left: 20px; /* Memberikan margin kiri pada judul */
+}

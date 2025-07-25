@@ -1,0 +1,170 @@
+<!---tugas.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Company Profile - Niessa Beauty Clinic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+        }
+        .card-img-top {
+                height: 180px;
+                object-fit: cover;
+        }
+        .card-footer {
+                background-color: #e8b7ff;
+                border-top: 1px solid #7808a1;
+        }
+        .card .btn-primary:hover {
+                background-color: #c497f7;
+                border-color: #973efc;
+        }
+        .kk{
+            color: #7808a1;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family :'Frank Ruhl Libre', sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(198, 124, 255);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+                <img src="niessa_bc.png" alt="Niessa" class="d-inline-block align-text-top me-2" style="width: 100px;">
+        </a>
+        <h1 class="kk">"Raih Kulit Terbaikmu"</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Treatments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4 mb-5">
+    <h2 class="text-center mb-4 text-primary">About</h2>
+
+    <h1 class="mb-3">Company Information</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Detail</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Company Name</td>
+                    <td>Niessa Beauty Clinic</td>
+                </tr>
+                <tr>
+                    <td>Year Founded</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Number of Employees</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Office Location</td>
+                    <td>Bontang, East Kalimantan</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="mt-5 mb-3">We Proudly Present</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="skincare_product.jpg" class="card-img-top" alt="Products">
+                <div class="card-body">
+                    <h5 class="card-title">Products</h5>
+                    <p class="card-text">We offer a wide range of beauty products and services tailored to your needs.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="skincare_treatment.jpg" class="card-img-top" alt="Treatments">
+                <div class="card-body">
+                    <h5 class="card-title">Treatments</h5>
+                    <p class="card-text">We provide a variety of beauty treatments to enhance your natural beauty.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="skincare_testimonial.jpg" class="card-img-top" alt="Testimonials">
+                <div class="card-body">
+                    <h5 class="card-title">Testimonials</h5>
+                    <p class="card-text">Hear from our satisfied clients about their experiences with our services.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="skincare_registration.png" class="card-img-top" alt="Registration">
+                <div class="card-body">
+                    <h5 class="card-title">Registration</h5>
+                    <p class="card-text">Register for our services and enjoy exclusive benefits and offers.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p>&copy; 2022 Niessa Beauty Clinic. All rights reserved.</p>
+        <p>Contact: info@niessabeautyclinic.com | Mobile Phone: 0813-4555-7770</p>
+        <div>
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i>Facebook</a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/your-font-awesome-kit-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
