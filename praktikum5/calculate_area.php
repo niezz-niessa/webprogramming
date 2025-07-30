@@ -4,10 +4,12 @@
 <body>
     <h1>Kalkulator Luas Persegi Panjang</h1>
     <?php
-        $panjang = 10;
-        $lebar = 5;
+        $panjang = 25;
+        $lebar = 10;
+
 
         $luas = $panjang * $lebar;
+
 
         echo "Panjang: " . $panjang . " unit<br>";
         echo "Lebar: " . $lebar . " unit<br>";

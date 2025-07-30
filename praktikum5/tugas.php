@@ -4,6 +4,7 @@ $nama_err = $email_err = $pesan_err = "";
 $form_valid = true;
 $display_output = false;
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty(trim($_POST["nama_lengkap"]))) {
         $nama_err = "Nama Lengkap tidak boleh kosong.";
@@ -12,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nama_lengkap = htmlspecialchars(trim($_POST["nama_lengkap"]));
     }
 
+
     if (empty(trim($_POST["email"]))) {
         $email_err = "Alamat Email tidak boleh kosong.";
         $form_valid = false;
@@ -19,12 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = htmlspecialchars(trim($_POST["email"]));
     }
 
+
     if (empty(trim($_POST["pesan"]))) {
         $pesan_err = "Pesan/Komentar tidak boleh kosong.";
         $form_valid = false;
     } else {
         $pesan = htmlspecialchars(trim($_POST["pesan"]));
     }
+
 
     if ($form_valid) {
         $display_output = true;
@@ -41,8 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #add8e6;
+            margin: 10px;
+            background-color: #eebcfdff;
             color: #333;
         }
         .container {
@@ -50,17 +54,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin: 30px auto;
             background: #fff;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(14, 87, 243, 0.1);
         }
         h1 {
-            color: #0056b3;
+            color: #6a02ccff;
             text-align: center;
             margin-bottom: 25px;
             font-size: 2.5em;
         }
         h2 {
-            color: #0056b3;
+            color: #8a42ffff;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -84,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             min-height: 80px;
         }
         form input[type="submit"] {
-            background-color: #007bff;
+            background-color: #8535eeff;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -96,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 20px;
         }
         form input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #b229f1ff;
         }
         .error {
             color: red;
@@ -106,17 +110,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: block;
         }
         .success-message {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
+            background-color: #f0ff98ff;
+            color: #6904bdff;
+            border: 1px solid #f8ffb7ff;
             padding: 10px;
             border-radius: 4px;
             margin-bottom: 20px;
             text-align: center;
         }
         .output-data {
-            border: 1px solid #007bff;
-            background-color: #e7f0ff;
+            border: 1px solid #8c00ffff;
+            background-color: #e5d1fcff;
             padding: 15px;
             border-radius: 4px;
             margin-top: 20px;
@@ -133,24 +137,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <h1>Buku Tamu Digital STITEK Bontang</h1>
 
+
         <h2>Form Input Buku Tamu</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="nama_lengkap">Nama Lengkap:</label>
-            <input type="text" id="nama_lengkap" name="nama_lengkap" 
+            <input type="text" id="nama_lengkap" name="nama_lengkap"
                    value="<?php echo isset($_POST['nama_lengkap']) ? htmlspecialchars($_POST['nama_lengkap']) : ''; ?>">
             <span class="error"><?php echo $nama_err; ?></span>
 
+
             <label for="email">Alamat Email:</label>
-            <input type="email" id="email" name="email" 
+            <input type="email" id="email" name="email"
                    value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
             <span class="error"><?php echo $email_err; ?></span>
+
 
             <label for="pesan">Pesan/Komentar:</label>
             <textarea id="pesan" name="pesan"><?php echo isset($_POST['pesan']) ? htmlspecialchars($_POST['pesan']) : ''; ?></textarea>
             <span class="error"><?php echo $pesan_err; ?></span>
 
+
             <input type="submit" name="submit_guestbook" value="Kirim Pesan">
         </form>
+
 
         <?php
         if ($display_output) {

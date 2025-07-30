@@ -6,15 +6,15 @@
     <?php
         // Ini adalah komentar satu baris untuk menjelaskan baris kode di bawah
         # Baris ini akan menampilkan nama lengkap Anda
-        echo "Nama: Gempr SR"; // Ganti dengan nama asli Anda
+        echo "Nama: Annisya"; // Ganti dengan nama asli Anda
         echo "<br>"; // Tag HTML <br> digunakan untuk membuat baris baru
-        
+       
         /*
          * Ini adalah blok komentar multi-baris.
          * Baris selanjutnya akan menampilkan NIM Anda.
          * Ini adalah bagian dari latihan praktikum Modul 5, C.2.
          */
-        echo "NIM: 12345678"; // Ganti dengan NIM asli Anda
+        echo "NIM: 202312060"; // Ganti dengan NIM asli Anda
     ?>
 </body>
 </html>

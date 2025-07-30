@@ -5,7 +5,8 @@ function hitung_diskon($harga, $persen_diskon) {
     return $harga - $potongan;
 }
 
-$harga_baju = 150000;
-$harga_setelah_diskon = hitung_diskon($harga_baju, 10); // Diskon 10%
+
+$harga_baju = 375000;
+$harga_setelah_diskon = hitung_diskon($harga_baju, 20); // Diskon 20%
 echo "Harga akhir: Rp " . $harga_setelah_diskon;
 ?>

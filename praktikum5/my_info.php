@@ -4,9 +4,9 @@
 <body>
     <h1>Informasi Pribadi</h1>
     <?php
-        echo "Nama: Gempr";
+        echo "Nama: Annisya";
         echo "<br>";
-        echo "NIM: 123456789";
+        echo "NIM: 202312060";
     ?>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!-- if_statements.php  -->
 <?php
-$nilai_ujian = 82;
+$nilai_ujian = 92;
 if ($nilai_ujian >= 85) {
     echo "Sangat Baik (A)";
 } elseif ($nilai_ujian >= 75) {

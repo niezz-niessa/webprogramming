@@ -1,10 +1,12 @@
-<!-- comments.php -->
-<?php
-// Ini adalah komentar satu baris
-# Ini juga komentar satu baris
-/*
-Ini adalah blok komentar
-untuk beberapa baris.
-*/
-echo "Kode ini akan dieksekusi.";
-?>
+<!-- my_info.php  -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Data Pribadi</h1>
+    <?php
+        echo "Nama: Annisya";
+        echo "<br>";
+        echo "NIM: 202312060";
+    ?>
+</body>
+</html>

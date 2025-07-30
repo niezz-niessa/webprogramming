@@ -2,6 +2,7 @@
 <?php
 echo "<h2>PHP switch Statement - Latihan Praktikum:</h2>";
 
+
 $level_user = "admin";
 echo "Level User: " . $level_user . " -> ";
 switch ($level_user) {
@@ -16,7 +17,9 @@ switch ($level_user) {
 }
 echo "<br><br>";
 
+
 $ukuran_baju = "L";
+
 
 echo "Ukuran Baju: " . $ukuran_baju . " -> ";
 switch ($ukuran_baju) {

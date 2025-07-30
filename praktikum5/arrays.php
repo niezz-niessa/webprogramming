@@ -1,10 +1,11 @@
 <!-- arrays.php -->
 <?php
 $data_dosen = [
-    "nama" => "Gempur SR",
-    "nim" => "202312082",
-    "matkul" => "Pemrograman Web"
+    "nama" => "Annisya",
+    "nim" => "202312060",
+    "matkul" => "Statistik Dasar",
 ];
+
 
 echo "Mahasiswa: " . $data_dosen["nama"];
 ?>

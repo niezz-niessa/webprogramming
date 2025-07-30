@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>Halaman PHP Pertamaku</h1>
+    <h1>My First PHP Page</h1>
     <?php
-        echo "Halo, Dunia!";
+        echo "Welcome to my practicum assignment!";
     ?>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!-- datatypes.php -->
 <?php
-$judul_buku = "Dasar-Dasar Web";
-$harga = 95000;
-$rating = 4.5;
+$judul_buku = "Pemrograman Web Dasar";
+$harga = 117.500;
+$rating = 4.7;
 $tersedia = true;
 var_dump($rating);
 ?>

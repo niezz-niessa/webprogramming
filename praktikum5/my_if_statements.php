@@ -2,7 +2,8 @@
 <?php
 echo "<h2>PHP if Statements Example:</h2>";
 
-$nilai_ujian = 82;
+
+$nilai_ujian = 90;
 echo "Nilai ujian: " . $nilai_ujian . " -> ";
 if ($nilai_ujian >= 85) {
     echo "Sangat Baik (A)";
