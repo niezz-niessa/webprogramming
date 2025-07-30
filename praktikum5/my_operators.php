@@ -2,7 +2,6 @@
 <?php
 echo "<h2>PHP Operators - Latihan Praktikum:</h2>";
 
-
 $umur = 25;
 $sudah_punya_sim = true;
 

@@ -10,7 +10,13 @@
 </head>
 <body>
   <h3>Event onmouseover & onmouseout</h3>
-  <img id="gambar" src="https://unsplash.it/200/150?image=1" alt="Gambar" onmouseover="gantiGambar()" onmouseout="kembalikanGambar()">
+  <img id="gambar" src="woman_laptop.jpg" alt="Gambar" onmouseover="gantiGambar()" onmouseout="kembalikanGambar()">
+  <style>
+    #gambar {
+      width: 300px;
+      height: auto;
+    }
+  </style>
   <hr>
   <h3>Event onfocus & onchange</h3>
   <label for="inputNama">Ketik Nama Anda:</label>
@@ -19,10 +25,10 @@
 
   <script>
     function gantiGambar() {
-      document.getElementById("gambar").src = "https://unsplash.it/200/150?image=10";
+      document.getElementById("gambar").src = "woman_laptop.jpg";
     }
     function kembalikanGambar() {
-      document.getElementById("gambar").src = "https://unsplash.it/200/150?image=1";
+      document.getElementById("gambar").src = "woman_laptop.jpg";
     }
     function tampilkanOutput() {
       var nilaiInput = document.getElementById("inputNama").value;
