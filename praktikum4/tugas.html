@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Toko Elektronik Cepat</title>
+    <title>Niessa Homeware</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,8 +10,8 @@
     <style>
         /* Modul 2: Desain & Styling */
         body {
-            font-family: Arial, sans-serif; /* Modul 2, D.1.b */
-            background-color: #add8e6; /* Modul 2, D.1.a */
+            font-family: Georgia, sans-serif; /* Modul 2, D.1.b */
+            background-color: #fad09c; /* Modul 2, D.1.a */
             margin: 0;
             padding: 20px;
             box-sizing: border-box; /* Modul 2, D.4.b */
@@ -19,7 +19,7 @@
         .container-wrapper {
             max-width: 1000px; /* Modul 2, D.2.e */
             margin: 20px auto; /* Modul 2, D.2.e */
-            background-color: #fff;
+            background-color: #b8c3ff;
             padding: 20px;
             border-radius: 8px; /* Modul 2, D.4.a */
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -198,12 +198,13 @@
 </head>
 <body onload="initializePage()">
     <div class="container-wrapper">
-        <h1>Toko Elektronik Cepat</h1> <!-- Modul 4, D.1 -->
+        <h1>Niessa Homeware</h1> <!-- Modul 4, D.1 -->
         <div id="real-time-clock"></div> <!-- Modul 4, D.1 -->
 
         <p class="description">
-            Selamat datang di Toko Elektronik Cepat! Temukan berbagai produk elektronik terbaru dengan harga terbaik.
-            Gunakan kode promo "DISKON10" untuk mendapatkan potongan harga spesial pada setiap pembelian Anda.
+            Selamat datang di Niessa Homeware! Dapatkan berbagai produk rumah tangga terbaru dengan harga terbaik.
+            Produk kami berasal dari Produk desain Korea yang estetis, fungsional, berkualitas tinggi dan terjangkau.
+            Gunakan kode promo "DISKON20" untuk mendapatkan potongan harga spesial pada setiap pembelian Anda.
         </p>
 
         <div class="main-content-grid">
@@ -240,7 +241,7 @@
                 <small id="jumlah-pesan-error" class="error-message"></small><br>
 
                 <label for="kode-promo">Kode Promo:</label>
-                <input type="text" id="kode-promo" name="kode-promo" placeholder="Contoh: DISKON10">
+                <input type="text" id="kode-promo" name="kode-promo" placeholder="Contoh: DISKON20">
                 <small id="kode-promo-error" class="error-message"></small><br><br>
 
                 <button type="submit">Pesan Sekarang</button>
@@ -257,30 +258,30 @@
         // Modul 4, D.2 - Data Produk
         var products = [ /* [2] */
             {
-                name: "Laptop Gaming X500",
-                price: 12000000,
+                name: "Lunch Box Set",
+                price: 150000,
                 images: [
-                    "https://placehold.co/500x300/3498db/ffffff?text=Laptop+Gaming+1",
-                    "https://placehold.co/500x300/2ecc71/ffffff?text=Laptop+Gaming+2",
-                    "https://placehold.co/500x300/e74c3c/ffffff?text=Laptop+Gaming+3"
+                    "https://placehold.co/500x300/3498db/ffffff?text=Lunch+Box+1",
+                    "https://placehold.co/500x300/2ecc71/ffffff?text=Lunch+Box+2",
+                    "https://placehold.co/500x300/e74c3c/ffffff?text=Lunch+Box+3"
                 ]
             },
             {
-                name: "Smartphone Ultra Z",
-                price: 7500000,
+                name: "Food Organizer BPA Free",
+                price: 120000,
                 images: [
-                    "https://placehold.co/500x300/f39c12/ffffff?text=Smartphone+1",
-                    "https://placehold.co/500x300/9b59b6/ffffff?text=Smartphone+2",
-                    "https://placehold.co/500x300/1abc9c/ffffff?text=Smartphone+3"
+                    "https://placehold.co/500x300/f39c12/ffffff?text=Food+Organizer+BPA+Free+1",
+                    "https://placehold.co/500x300/34495e/ffffff?text=Food+Organizer+BPA+Free+2",
+                    "https://placehold.co/500x300/1abc9c/ffffff?text=Food+Organizer+BPA+Free+3"
                 ]
             },
             {
-                name: "Smart TV 55 Inch",
-                price: 9000000,
+                name: "Tumbler Stainless Steel 1000 ml",
+                price: 205000,
                 images: [
-                    "https://placehold.co/500x300/95a5a6/ffffff?text=Smart+TV+1",
-                    "https://placehold.co/500x300/34495e/ffffff?text=Smart+TV+2",
-                    "https://placehold.co/500x300/c0392b/ffffff?text=Smart+TV+3"
+                    "https://placehold.co/500x300/95a5a6/ffffff?text=Tumbler+Stainless+Steel+1",
+                    "https://placehold.co/500x300/34495e/ffffff?text=Tumbler+Stainless+Steel+2",
+                    "https://placehold.co/500x300/c0392b/ffffff?text=Tumbler+Stainless+Steel+3"
                 ]
             }
         ];
@@ -389,13 +390,13 @@
 
             // Perhitungan Total
             var activeProduct = products[currentProductIndex];
-            var subtotal = activeProduct.price * jumlahPesan; /* [10] */
+            var subtotal = activeProduct.price * jumlahPesan; /* [20] */
             var potongan = 0;
             var totalAkhir = subtotal;
 
             // Modul 4, D.5: Logika Percabangan Diskon (from C.3) [10, 15-18]
-            if (kodePromo === "DISKON10") {
-                potongan = subtotal * 0.10;
+            if (kodePromo === "DISKON20") {
+                potongan = subtotal * 0.20;
                 totalAkhir = subtotal - potongan;
             }
 

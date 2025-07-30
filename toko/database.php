@@ -10,5 +10,3 @@ CREATE TABLE produk (
    harga INT NOT NULL,
    stok INT NOT NULL
 );
- 
- 

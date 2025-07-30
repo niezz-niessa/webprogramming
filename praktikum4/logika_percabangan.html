@@ -5,7 +5,7 @@
 <body>
   <h2>Kalkulator Diskon Belanja</h2>
   <p>Masukkan total belanja Anda:</p>
-  <input type="number" id="totalBelanja" placeholder="Contoh: 150000">
+  <input type="number" id="totalBelanja" placeholder="Contoh: 100000">
   <button onclick="cekDiskon()">Cek Diskon</button>
   <h3 id="hasil"></h3>
 
@@ -16,9 +16,9 @@
       if (isNaN(total)) {
         pesan = "Mohon masukkan angka yang valid.";
       } else if (total >= 100000) {
-        var diskon = total * 0.10;
+        var diskon = total * 0.15;
         var totalBayar = total - diskon;
-        pesan = "Selamat! Anda dapat diskon 10% sebesar Rp " + diskon + ". Total bayar: <b>Rp " + totalBayar + "</b>";
+        pesan = "Selamat! Anda dapat diskon 15% sebesar Rp " + diskon + ". Total bayar: <b>Rp " + totalBayar + "</b>";
       } else {
         pesan = "Maaf, tidak ada diskon. Total bayar: <b>Rp " + total + "</b>";
       }
