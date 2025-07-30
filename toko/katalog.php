@@ -7,7 +7,7 @@ include 'head.php'; // Menyertakan file head.php
 <div class="row py-lg-5">
    <div class="col-lg-6 col-md-8 mx-auto">
        <h1 class="fw-light"><?php echo $main_title; ?></h1>
-       <p class="lead text-body-secondary">Katalog produk kami menampilkan berbagai barang berkualitas tinggi yang tersedia untuk Anda. Temukan produk yang Anda butuhkan di sini.</p>
+       <p class="lead text-body-secondary">"Cari alat kesehatan yang aman dan berkualitas? Kami menyediakan berbagai alat kesehatan berkualitas tinggi untuk mendukung hidup sehat dan nyaman setiap hari. Temukan sekarang di katalog kami—praktis, lengkap, dan siap dikirim ke rumah Anda!".</p>
        <p> <a href="#" class="btn btn-primary my-2">Main call to action</a> <a href="#" class="btn btn-secondary my-2">Secondary action</a> </p>
    </div>
    <div class="album py-5 bg-body-tertiary">
