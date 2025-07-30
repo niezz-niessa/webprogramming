@@ -1,4 +1,4 @@
-# Praktikum Pemrograman Web - Portofolio Digital
+# Praktikum Pemrograman Web - Portofolio Digital.
 By Annisya; NIM 202312060
 
 Repositori ini berisi hasil praktikum dan tugas dari mata kuliah Pemrograman Web, mencakup dasar-dasar pengembangan web mulai dari struktur halaman, styling, interaktivitas, pengembangan server-side dengan database, hingga sistem kontrol versi.
